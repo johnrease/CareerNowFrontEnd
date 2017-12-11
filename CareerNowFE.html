@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="CNBApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="CareerNowFE.js"></script>
+    <link rel="stylesheet" href="CareerNowFE.css">
+    <a href="#/">Home</a>
+    <a href="#/">About</a>
+</head>
+<body ng-controller="CNBListController">
+ 	<ul>
+ 		<li ng-repeat="CNBitem in CNBitems">
+ 			<h2>{{CNBitem.heading}}</h2>
+ 			<p>{{CNBitem.lorem}}</p>
+ 			<img src="{{CNBitem.image}}">
+ 		</li>
+ 	</ul>
+</body>
+<footer>
+<P>Sample Footer</P>
+</footer>
+</html>
